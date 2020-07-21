@@ -1,25 +1,33 @@
 # 理想の python 環境
+
 - 基本的には docker を使えば問題ない。他人からもらった jupyter も動かせるはず。
 - jupyter を渡す時に環境ごと渡したい。
 
 # pip とは
+
 -　パッケージ管理ツール
 
-# pyenvのインストール
+# pyenv のインストール
+
 ## 必要なもの
+
 - xcode-select
 - Homebrew
 
 ## 前提知識
+
 - xcode はデフォルトでインストールされているものがあって、それを使うと sudo が必要。xcode-select でインストールした方が良い。
+
 ```
 smotoshei ~
 木 11/ 21:49:49 xcode-select -p
 /Library/Developer/CommandLineTools
 ```
-上記のxcode見てない場合は切り替え
+
+上記の xcode 見てない場合は切り替え
 
 - pyenv install 3.8.2 で
+
 ```
 python-build: use openssl@1.1 from homebrew
 python-build: use readline from homebrew
@@ -47,13 +55,15 @@ ModuleNotFoundError: No module named '_scproxy'
 make: *** [install] Error 1
 ```
 
-
 # vscode での設定
+
 https://qiita.com/kahirokunn/items/512b9e502f8db49981f3
 
 のようなエラーが発生したが、sudo をつけると問題なくインストールできた。
+
 # 参考
-python を書き始める前に見るべきTips
+
+python を書き始める前に見るべき Tips
 https://qiita.com/icoxfog417/items/e8f97a6acad07903b5b0
 
 pyenv インストール
@@ -63,4 +73,3 @@ pyenv バージョン切り替え
 https://qiita.com/koooooo/items/b21d87ffe2b56d0c589b
 
 pyenv + anaconda
-
